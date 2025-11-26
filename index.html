@@ -70,7 +70,7 @@
         }
 
         .jumbotron {
-            background: linear-gradient(rgba(244, 132, 152, 0.7), rgba(231, 143, 142, 0.7)), url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=1200') center/cover;
+            background: linear-gradient(rgba(244, 132, 152, 0.7), rgba(231, 143, 142, 0.7)), url('https://donutbank.com/cdn/shop/files/bakery_case_hero-c.webp?v=1702304666') center/cover;
             color: white;
             padding: 100px 0;
             margin-bottom: 3rem;
@@ -119,6 +119,48 @@
         footer a:hover {
             color: var(--coral);
         }
+
+        .reviews-section {
+            background-color: white;
+            padding: 4rem 0;
+            margin-top: 4rem;
+        }
+        .reviews-title {
+            text-align: center;
+            color: var(--rose);
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .review-card {
+            background-color: var(--blush);
+            border: 2px solid var(--peach);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+        .review-card:hover {
+            border-color: var(--rose);
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(244, 132, 152, 0.2);
+        }
+        .review-stars {
+            color: #ffc107;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        .review-text {
+            color: #666;
+            font-style: italic;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        .review-author {
+            color: var(--coral);
+            font-weight: bold;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -127,7 +169,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <a href="#" class="logo">Sweet Breeze Bakery</a>
+                <a href="index.html" class="logo">Sweet Breeze Bakery</a>
             </div>
             <div class="col-md-6">
                 <form class="d-flex justify-content-end search-bar ms-auto">
@@ -148,10 +190,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav w-100 justify-content-around">
                 <li class="nav-item">
-                    <a class="nav-link active px-4" href="#">Home</a>
+                    <a class="nav-link active px-4" href="index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle px-4" href="menu.html" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle px-4" href="menu.html" id="menuDropdown" data-bs-toggle="dropdown">
                         Menu
                     </a>
                     <ul class="dropdown-menu">
@@ -187,7 +229,7 @@
     <div class="row g-4">
         <div class="col-lg-4 col-md-12">
             <div class="card h-100 shadow-sm">
-                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" class="card-img-top" alt="Cakes">
+                <img src="images/cakes2.png" class="card-img-top" alt="Cakes">
                 <div class="card-body">
                     <h5 class="card-title">Signature Cakes</h5>
                     <p class="card-text">Indulge in our handcrafted cakes, made with premium ingredients and decorated with love. Perfect for any celebration.</p>
@@ -197,7 +239,7 @@
         </div>
         <div class="col-lg-4 col-md-12">
             <div class="card h-100 shadow-sm">
-                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400" class="card-img-top" alt="Pastries">
+                <img src="images/cakes3.png" class="card-img-top" alt="Pastries">
                 <div class="card-body">
                     <h5 class="card-title">Fresh Pastries</h5>
                     <p class="card-text">Start your morning right with our flaky croissants, danish pastries, and artisan breads baked fresh daily.</p>
@@ -207,11 +249,64 @@
         </div>
         <div class="col-md-4">
             <div class="card h-100 shadow-sm">
-                <img src="https://images.unsplash.com/photo-1586985289688-ca3cf47d3e6e?w=400" class="card-img-top" alt="Custom Orders">
+                <img src="images/cakes5.png" class="card-img-top" alt="Custom Orders">
                 <div class="card-body">
                     <h5 class="card-title">Custom Orders</h5>
                     <p class="card-text">Make your special occasions unforgettable with our custom cake designs tailored to your vision and taste.</p>
                     <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reviews Section -->
+<div class="reviews-section">
+    <div class="container">
+        <h2 class="reviews-title">What Our Customers Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Absolutely the best bakery in town! Their chocolate cake made my daughter's birthday unforgettable. The quality and taste are outstanding. Will definitely be coming back!"</p>
+                    <p class="review-author">- Sarah Mitchell</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"I stop by every morning for their butter croissants. They're perfectly flaky and buttery, just like the ones I had in Paris. The staff is also incredibly friendly!"</p>
+                    <p class="review-author">- Michael Chen</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Sweet Delights catered my wedding and everyone raved about the desserts! The custom cake was a work of art and tasted even better than it looked. Highly recommend!"</p>
+                    <p class="review-author">- Jennifer Rodriguez</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Been coming here for 5 years and they never disappoint. Everything is fresh, delicious, and reasonably priced. The cinnamon rolls are my weekend guilty pleasure!"</p>
+                    <p class="review-author">- David Thompson</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"The fruit tarts are incredible! Fresh fruit, perfect custard, and a buttery crust. This bakery truly cares about quality ingredients and it shows in every bite."</p>
+                    <p class="review-author">- Emily Watson</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"As a coffee shop owner, I've tried many bakeries for wholesale. Sweet Delights is by far the best. Their pastries fly off our shelves every single day!"</p>
+                    <p class="review-author">- Alex Martinez</p>
                 </div>
             </div>
         </div>
