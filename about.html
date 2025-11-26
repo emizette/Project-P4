@@ -1,0 +1,294 @@
+<!-- DEVELOPER: Emilette Segura, IS117-005, Fall 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Breeze Bakery - About Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --peach: #f2ccc3;
+            --coral: #e78f8e;
+            --blush: #ffe6e8;
+            --mint: #acd8aa;
+            --rose: #f48498;
+        }
+
+        body {
+            background-color: var(--blush);
+        }
+
+        .top-header {
+            background-color: white;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--rose);
+            text-decoration: none;
+        }
+        .logo:hover {
+            color: var(--coral);
+        }
+        .search-bar {
+            max-width: 300px;
+        }
+        .search-bar .btn {
+            background-color: var(--mint);
+            border-color: var(--mint);
+            color: white;
+        }
+        .search-bar .btn:hover {
+            background-color: #9bc799;
+            border-color: #9bc799;
+        }
+        .search-bar .form-control:focus {
+            border-color: var(--mint);
+            box-shadow: 0 0 0 0.25rem rgba(172, 216, 170, 0.25);
+        }
+
+        .navbar {
+            background-color: var(--peach) !important;
+            border-bottom: 3px solid var(--coral) !important;
+        }
+        .navbar .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+        }
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: var(--rose) !important;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            margin-top: 0;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 3rem 0 2rem;
+            color: var(--rose);
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .carousel {
+            margin: 2rem 0 4rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(244, 132, 152, 0.3);
+        }
+        .carousel-inner {
+            border-radius: 15px;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: var(--rose);
+            border-radius: 50%;
+            padding: 20px;
+        }
+        .carousel-indicators button {
+            background-color: var(--coral);
+        }
+
+        .content-section {
+            background-color: white;
+            border: 2px solid var(--peach);
+            border-radius: 15px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: all 0.3s;
+        }
+        .content-section:hover {
+            border-color: var(--rose);
+            box-shadow: 0 5px 20px rgba(244, 132, 152, 0.2);
+        }
+        .content-section h2 {
+            color: var(--coral);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--peach);
+        }
+        .content-section p {
+            color: #666;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            background-color: var(--peach);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 3px solid var(--coral);
+        }
+        footer a {
+            color: var(--rose);
+        }
+        footer a:hover {
+            color: var(--coral);
+        }
+    </style>
+</head>
+<body>
+<!-- Logo and Search Bar -->
+<div class="container-fluid top-header py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <a href="index.html" class="logo">Sweet Breeze Bakery</a>
+            </div>
+            <div class="col-md-6">
+                <form class="d-flex justify-content-end search-bar ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-4" href="menu.html" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="menu.html#cakes">Cakes</a></li>
+                        <li><a class="dropdown-item" href="menu.html#pastries">Pastries</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active px-4" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="order.html">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Title -->
+<div class="container">
+    <h1 class="page-title">About Us</h1>
+</div>
+
+<!-- Carousel -->
+<div class="container">
+    <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1200" class="d-block w-100" alt="Our Team">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Our Amazing Team</h5>
+                    <p>Dedicated professionals passionate about baking</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=1200" class="d-block w-100" alt="Master Bakers">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Master Bakers at Work</h5>
+                    <p>Crafting perfection every single day</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200" class="d-block w-100" alt="Fresh Baked Goods">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Freshly Baked Daily</h5>
+                    <p>Quality ingredients, traditional methods</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?w=1200" class="d-block w-100" alt="Happy Clients">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Happy Customers</h5>
+                    <p>Creating smiles one pastry at a time</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1200" class="d-block w-100" alt="Bakery Kitchen">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Our Kitchen</h5>
+                    <p>Where the magic happens</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<!-- Content Sections -->
+<div class="container">
+    <!-- Our History -->
+    <div class="content-section">
+        <h2>Our History</h2>
+        <p>Sweet Breeze Bakery was founded in 1995 by Maria Segura, a passionate baker who dreamed of bringing authentic, handcrafted baked goods to the community. What started as a small corner shop with just three ovens has blossomed into a beloved neighborhood institution.</p>
+        <p>Over the past three decades, we've maintained our commitment to traditional baking methods while embracing innovation. Our recipes have been passed down through generations, each one refined and perfected with love and care. From our signature butter croissants to our decadent chocolate cakes, every item tells the story of our journey and dedication to excellence.</p>
+        <p>Today, Sweet Breeze serves thousands of happy customers each week, but we've never forgotten our roots. We're still the same family-run bakery that believes in quality over quantity, craftsmanship over convenience, and community over commerce.</p>
+    </div>
+
+    <!-- Our Values -->
+    <div class="content-section">
+        <h2>Our Values</h2>
+        <p><strong>Quality First:</strong> We use only the finest ingredients sourced from trusted suppliers. No shortcuts, no compromises. Every pastry, cake, and bread that leaves our kitchen meets our exacting standards.</p>
+        <p><strong>Community Connection:</strong> We believe in supporting our local community. From sourcing ingredients from nearby farms to hosting baking classes for children, we're committed to giving back to the neighborhood that has supported us for so long.</p>
+        <p><strong>Sustainability:</strong> We're mindful of our environmental impact. We minimize waste, use eco-friendly packaging, and work with suppliers who share our commitment to sustainable practices.</p>
+        <p><strong>Authentic Craftsmanship:</strong> In an age of mass production, we remain dedicated to artisanal methods. Our bakers arrive before dawn to ensure everything is made fresh daily, by hand, with skill and passion.</p>
+    </div>
+
+    <!-- Our Mission -->
+    <div class="content-section">
+        <h2>Our Mission</h2>
+        <p>Our mission is simple yet profound: to create moments of joy and connection through exceptional baked goods. We believe that food has the power to bring people together, to celebrate life's special moments, and to add a touch of sweetness to everyday life.</p>
+        <p>We strive to be more than just a bakery—we aim to be a gathering place where neighbors become friends, where traditions are honored, and where new memories are made. Every birthday cake we create, every morning croissant we serve, and every custom order we fulfill is an opportunity to spread happiness and create lasting impressions.</p>
+        <p>As we look to the future, we remain committed to our founding principles while continuously evolving to meet the needs of our community. We invite you to be part of our story, to taste the difference that passion and dedication make, and to experience the warmth and care that goes into everything we bake.</p>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0">Emilette Segura, 2025 - <a href="#" class="text-decoration-none">Terms</a>, <a href="#" class="text-decoration-none">Privacy</a></p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

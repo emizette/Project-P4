@@ -1,0 +1,299 @@
+<!-- DEVELOPER: Emilette Segura, IS117-005, Fall 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Breeze Bakery - Contact Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --peach: #f2ccc3;
+            --coral: #e78f8e;
+            --blush: #ffe6e8;
+            --mint: #acd8aa;
+            --rose: #f48498;
+        }
+
+        body {
+            background-color: var(--blush);
+        }
+
+        .top-header {
+            background-color: white;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--rose);
+            text-decoration: none;
+        }
+        .logo:hover {
+            color: var(--coral);
+        }
+        .search-bar {
+            max-width: 300px;
+        }
+        .search-bar .btn {
+            background-color: var(--mint);
+            border-color: var(--mint);
+            color: white;
+        }
+        .search-bar .btn:hover {
+            background-color: #9bc799;
+            border-color: #9bc799;
+        }
+        .search-bar .form-control:focus {
+            border-color: var(--mint);
+            box-shadow: 0 0 0 0.25rem rgba(172, 216, 170, 0.25);
+        }
+
+        .navbar {
+            background-color: var(--peach) !important;
+            border-bottom: 3px solid var(--coral) !important;
+        }
+        .navbar .nav-link {
+            color: #333 !important;
+            font-weight: 500;
+        }
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: var(--rose) !important;
+        }
+
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            margin-top: 0;
+        }
+
+        .page-title {
+            text-align: center;
+            padding: 3rem 0 1rem;
+            color: var(--rose);
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .page-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+        }
+
+        .contact-form {
+            background-color: white;
+            border: 2px solid var(--peach);
+            border-radius: 15px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(244, 132, 152, 0.2);
+        }
+
+        .form-label {
+            color: var(--coral);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .form-control, .form-select {
+            border: 2px solid var(--peach);
+            border-radius: 8px;
+            padding: 0.75rem;
+            transition: all 0.3s;
+        }
+
+        .form-control:focus, .form-select:focus {
+            border-color: var(--rose);
+            box-shadow: 0 0 0 0.25rem rgba(244, 132, 152, 0.15);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .send-btn {
+            background-color: var(--mint);
+            border-color: var(--mint);
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 3rem;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+            width: 100%;
+            margin-top: 1rem;
+        }
+
+        .send-btn:hover {
+            background-color: #9bc799;
+            border-color: #9bc799;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(172, 216, 170, 0.4);
+        }
+
+        .contact-info {
+            background-color: white;
+            border: 2px solid var(--peach);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            color: var(--rose);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info-item {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info-item strong {
+            color: var(--coral);
+        }
+
+        footer {
+            background-color: var(--peach);
+            padding: 2rem 0;
+            margin-top: 4rem;
+            border-top: 3px solid var(--coral);
+        }
+        footer a {
+            color: var(--rose);
+        }
+        footer a:hover {
+            color: var(--coral);
+        }
+    </style>
+</head>
+<body>
+<!-- Logo and Search Bar -->
+<div class="container-fluid top-header py-3">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <a href="index.html" class="logo">Sweet Breeze Bakery</a>
+            </div>
+            <div class="col-md-6">
+                <form class="d-flex justify-content-end search-bar ms-auto">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-around">
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle px-4" href="menu.html" id="menuDropdown" role="button" data-bs-toggle="dropdown">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="menu.html#cakes">Cakes</a></li>
+                        <li><a class="dropdown-item" href="menu.html#pastries">Pastries</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-4" href="order.html">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active px-4" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Page Title -->
+<div class="container">
+    <h1 class="page-title">Contact Us</h1>
+    <p class="page-subtitle">We'd love to hear from you! Send us a message and we'll get back to you as soon as possible.</p>
+</div>
+
+<!-- Contact Form -->
+<div class="contact-container">
+    <div class="contact-form">
+        <div class="mb-4">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+        </div>
+
+        <div class="mb-4">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email address">
+        </div>
+
+        <div class="mb-4">
+            <label for="subject" class="form-label">Subject:</label>
+            <input type="text" class="form-control" id="subject" placeholder="What is this regarding?">
+        </div>
+
+        <div class="mb-4">
+            <label for="description" class="form-label">Description:</label>
+            <textarea class="form-control" id="description" placeholder="Tell us more about your inquiry..."></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">📧 Send Message</button>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <h3>📍 Visit Us</h3>
+        <div class="contact-info-item">
+            <p><strong>Address:</strong> P. Sherman, 42 Wallaby Way, NJ 07032</p>
+        </div>
+        <div class="contact-info-item">
+            <p><strong>Phone:</strong> (555) 123-4567</p>
+        </div>
+        <div class="contact-info-item">
+            <p><strong>Email:</strong> hello@sweetbreezebakery.com</p>
+        </div>
+        <div class="contact-info-item">
+            <p><strong>Hours:</strong> Monday - Saturday: 7:00 AM - 7:00 PM | Sunday: 8:00 AM - 5:00 PM</p>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0">Emilette Segura, 2025 - <a href="#" class="text-decoration-none">Terms</a>, <a href="#" class="text-decoration-none">Privacy</a></p>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
